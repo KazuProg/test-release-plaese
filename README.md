@@ -34,3 +34,7 @@ Rules
 - Restrict deletions
 - Require linear history
 - Block force pushes
+
+## General
+
+Pull Requests > [x] Automatically delete head branches 
