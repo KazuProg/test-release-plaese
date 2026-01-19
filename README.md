@@ -34,3 +34,10 @@ Rules
 - Restrict deletions
 - Require linear history
 - Block force pushes
+
+# husky
+
+```
+npm install --save-dev husky
+npx husky init
+```
