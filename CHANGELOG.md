@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/KazuProg/test-release-plaese/compare/v1.1.0...v1.2.0) (2026-01-19)
+
+
+### Features
+
+* add husky ([#6](https://github.com/KazuProg/test-release-plaese/issues/6)) ([fae2904](https://github.com/KazuProg/test-release-plaese/commit/fae290484b30130f5f99aac13311e340833e4331))
+
 ## [1.1.0](https://github.com/KazuProg/test-release-plaese/compare/v1.0.1...v1.1.0) (2026-01-19)
 
 
