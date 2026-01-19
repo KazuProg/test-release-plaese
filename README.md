@@ -1,43 +1,24 @@
-# PAT作成
+# Git Flow 検証など
 
-Expiration: No expiration
+## ブランチ運用
 
-Repository access: Only select repositories
+- `main`
+  - リリースされている状態のブランチ
+  - `develop`からのみMergeされる(GitHub Workflowで自動化)
+- `develop`: リリースを控えているブランチ
+  - `feature/*`ブランチからMergeされる
+- `feature/*` 機能開発ブランチ
 
-Permissions
-- Contents: Read and write
-- Metadata: Read-only
-- Pull requests: Read and write
-- Workflows: Read and write
+`main`,`develop`はブランチ保護をし、勝手にCommitなどされないようにしている。
+リポジトリオーナーはその制限を突破できるので、huskyでも縛っている
 
-# Repository Settings
+## PR運用
 
-## Secrets and variables
+Rebase Merge
+- コミットログがConventionalCommits形式で統一される
 
-### Actions
+## Commitメッセージ
 
-Repository secretsに先ほどの値を登録(key:`MY_RELEASE_PLEASE_TOKEN`)
+Conventional Commits
 
-## Rules > Rulesets
-
-Add branch ruleset
-
-### Ruleset name: protect main
-
-Bypass list
-- Repository admin
-
-Target branches: main
-
-Rules
-- Restrict updates
-- Restrict deletions
-- Require linear history
-- Block force pushes
-
-# husky
-
-```
-npm install --save-dev husky
-npx husky init
-```
+commitlintを使用してコミット時に自動検証
