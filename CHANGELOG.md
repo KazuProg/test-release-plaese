@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/KazuProg/test-release-plaese/compare/v1.3.0...v1.4.0) (2026-01-19)
+
+
+### Features
+
+* add docs ([9586a54](https://github.com/KazuProg/test-release-plaese/commit/9586a54672b529d7ced6cf30c715166dbc4d7a93))
+
 ## [1.3.0](https://github.com/KazuProg/test-release-plaese/compare/v1.2.0...v1.3.0) (2026-01-19)
 
 
