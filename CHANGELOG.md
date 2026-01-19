@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/KazuProg/test-release-plaese/compare/v1.0.0...v1.0.1) (2026-01-19)
+
+
+### Bug Fixes
+
+* sync-main script ([21b79c1](https://github.com/KazuProg/test-release-plaese/commit/21b79c14a96548ff082e8548b69be55acaac1103))
+
 ## 1.0.0 (2026-01-19)
 
 
