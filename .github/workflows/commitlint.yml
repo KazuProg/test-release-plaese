@@ -17,3 +17,19 @@ jobs:
       - name: Validate all commits in PR
         run: |
           npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
+
+      - name: Validate fixup/squash and merge commits
+        run: |
+          PATTERNS="^(fixup!|squash!|Merge branch|Merge pull request)"
+
+          BAD_COMMITS=$(git log ${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }} --format=%s \
+            | grep -E "$PATTERNS" || true)
+
+          if [ -n "$BAD_COMMITS" ]; then
+            echo "❌ Unwanted commits detected!"
+            echo "Please remove the following commits by rebasing:"
+            echo "$BAD_COMMITS"
+            echo ""
+            echo "Hint: Use 'git rebase -i main' to clean up your history."
+            exit 1
+          fi
