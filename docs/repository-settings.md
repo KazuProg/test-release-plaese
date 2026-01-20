@@ -19,21 +19,19 @@ Permissions
 Repository secretsに先ほどの値を登録(key:`MY_RELEASE_PLEASE_TOKEN`)
 
 ## Rules > Rulesets
+New ruleset > New branch ruleset
 
-Add branch ruleset
-
-### Ruleset name: protect main
-
-Bypass list
-- Repository admin
-
-Target branches: main
-
-Rules
-- Restrict updates
-- Restrict deletions
-- Require linear history
-- Block force pushes
+### Ruleset: main branch
+- Bypass list
+    - Repository admin
+- Target branches
+    - main
+- Rules
+    - Restrict creations
+    - Restrict updates
+    - Restrict deletions
+    - Require linear history
+    - Block force pushes
 
 ### Ruleset: develop branch
 - Bypass list: empty
