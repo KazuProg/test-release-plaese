@@ -26,7 +26,6 @@ jobs:
             | grep -E "$PATTERNS" || true)
 
           if [ -n "$BAD_COMMITS" ]; then
-            echo "❌ Unwanted commits detected!"
             echo "Please remove the following commits by rebasing:"
             echo "$BAD_COMMITS"
             echo ""
