@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.6.0](https://github.com/KazuProg/test-release-plaese/compare/v1.5.0...v1.6.0) (2026-01-20)
+
+
+### Features
+
+* add restrict commit message rules in workflow ([7f1fe5a](https://github.com/KazuProg/test-release-plaese/commit/7f1fe5a965471fc7982d80498c430bf7b57532e3))
+* add restrict commit message rules in workflow ([d23d524](https://github.com/KazuProg/test-release-plaese/commit/d23d524d4952af41480a440701464053c98b8361))
+* add ruleset for develop branch ([6d6cc48](https://github.com/KazuProg/test-release-plaese/commit/6d6cc4874c403579dac2bb396ffbc3b9dbc7c2cb))
+
+
+### Bug Fixes
+
+* improve main branch ruleset ([7350cb8](https://github.com/KazuProg/test-release-plaese/commit/7350cb82b5335033968a8b15d03a88bb06d3ab18))
+
 ## [1.5.0](https://github.com/KazuProg/test-release-plaese/compare/v1.4.0...v1.5.0) (2026-01-19)
 
 
