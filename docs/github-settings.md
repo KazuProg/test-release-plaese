@@ -1,22 +1,20 @@
-# PAT作成
+# Generate PAT
 
-Expiration: No expiration
+## Account settings > Developer settings
 
-Repository access: Only select repositories
-
-Permissions
-- Contents: Read and write
-- Metadata: Read-only
-- Pull requests: Read and write
-- Workflows: Read and write
+### Personal access Tokens > Fine-grained tokens
+Generate new token
+- Token name: `test-for-workflow`
+- Expiration: No expiration
+- Repository access: Only select repositories
+    - (your repository)
+- Permissions > Repositories
+    - Contents: Read and write
+    - Metadata: Read-only
+    - Pull requests: Read and write
+    - Workflows: Read and write
 
 # Repository Settings
-
-## Secrets and variables
-
-### Actions
-
-Repository secretsに先ほどの値を登録(key:`MY_RELEASE_PLEASE_TOKEN`)
 
 ## Rules > Rulesets
 New ruleset > New branch ruleset
@@ -34,8 +32,10 @@ New ruleset > New branch ruleset
     - Block force pushes
 
 ### Ruleset: develop branch
-- Bypass list: empty
-- Target branch: develop
+- Bypass list
+    - (empty)
+- Target branch
+    - develop
 - Rules
     - Restrict creations
     - Restrict deletions
@@ -50,3 +50,8 @@ New ruleset > New branch ruleset
         - commitlint
         - (other ci checks)
     - Block force pushes
+
+## Secrets and variables > Actions
+New repository secret
+- Name: `MY_RELEASE_PLEASE_TOKEN`
+- Secret: `{Your PAT}`
