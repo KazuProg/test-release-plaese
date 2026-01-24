@@ -1,4 +1,4 @@
-name: sync-main
+name: sync-release
 
 on:
   push:
@@ -15,12 +15,12 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
 
-      - name: Fast-forward main to develop
+      - name: Fast-forward release to develop
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git checkout main
+          git checkout release
           git merge --ff-only origin/develop
 
-          git push origin main
+          git push origin release
