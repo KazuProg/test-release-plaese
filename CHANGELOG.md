@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.7.0](https://github.com/KazuProg/test-release-plaese/compare/v1.6.0...v1.7.0) (2026-01-24)
+
+
+### Features
+
+* add commitlint configuration in workflow config ([2949758](https://github.com/KazuProg/test-release-plaese/commit/29497585cc6837f724723ab7b888aaea38b666ae))
+
+
+### Bug Fixes
+
+* change released branch name from main to release ([3e6c04c](https://github.com/KazuProg/test-release-plaese/commit/3e6c04c0309e5d9a48abb833b0d2ee66394b2fa5))
+
 ## [1.6.0](https://github.com/KazuProg/test-release-plaese/compare/v1.5.0...v1.6.0) (2026-01-20)
 
 
